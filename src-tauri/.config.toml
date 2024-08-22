@@ -1,0 +1,5 @@
+version = "0.0.0"
+developmentMode = true
+configurationPath = ".config.toml"
+dbPath = "file.db"
+workspaceId = "01917451-7448-7fd2-a5f5-10757a7ac8ed"

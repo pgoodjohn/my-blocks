@@ -1,0 +1,31 @@
+[package]
+name = "my-blocks"
+version = "0.0.0"
+description = "A Tauri App"
+authors = ["you"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "my_blocks_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.0-rc", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0-rc", features = [] }
+tauri-plugin-shell = "2.0.0-rc"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+log = "0.4.22"
+plogger = "0.0.1"
+rusqlite = "0.32.1"
+dirs = "5.0.1"
+r2d2 = "0.8.10"
+r2d2_sqlite = "0.25.0"
+uuid = { version = "1.10.0", features = ["v7", "serde", "std"] }
+chrono = { version = "0.4.38", features = ["serde"] }
+toml = "0.8.19"
+
