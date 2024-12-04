@@ -8,6 +8,8 @@ use r2d2::Pool;
 
 use crate::configuration::Configuration;
 
+mod block;
+
 #[derive(Debug, Deserialize, Serialize)]
 pub struct BlockContent {
     pub content_type: String,
